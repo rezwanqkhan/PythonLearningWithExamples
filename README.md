@@ -3,7 +3,10 @@
 Welcome to our repository dedicated to enhancing your Python programming skills through practical examples and explanations. Whether you're just starting your Python journey or looking to deepen your understanding, you'll find valuable resources here to support your learning experience. Happy coding!
 
 ---
+## Course Details:
 
+- **Course Name:** Programming with Python
+- **Instructor:** [Ali Osman CIBIKDIKEN](https://github.com/aocdiken))
 ## Course Contents:
 
 1. **Comments in Python:**
