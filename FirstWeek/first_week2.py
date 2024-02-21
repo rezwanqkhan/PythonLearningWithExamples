@@ -246,3 +246,9 @@ y = platform.machine()
 print(y)
 z = platform.node()
 print(z)
+
+# mylist = ["python", "hub"]
+# for i in mylist:
+#     mylist.append(i.upper())   #infiniti loop
+#     print(i)
+# print(mylist)
