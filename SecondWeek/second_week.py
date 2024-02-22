@@ -10,7 +10,7 @@ print(id(A))
 print(id(B))
 print(id(C))
 
-# type fuc determine which type of data type is it
+# type function determines which type of data type is it
 A = 100
 print(type(A))
 
@@ -38,9 +38,9 @@ del y
 print("number of instance: " + str(C.counter))  # 0
 
 
-## for makin private of an atrribute
-# for making private an attribute we have to use double underscore(like __counter)
-# for making access to the private attribute we use instance methods
+## for making private of an attribute
+# For making private an attribute we have to use a double underscore(like __counter)
+# For making access to the private attribute we use instance methods
 class Robot:
     __counter = 0
 
@@ -58,7 +58,7 @@ print((y.RobotInstance()))  # 2
 
 print(Robot.RobotInstance(x))  # 2  just call the value
 
-# if we wanna access directly to the method we add @staticmethod
+# If we wanna access directly to the method we add @staticmethod
 print("@staticmethod")
 
 
@@ -82,10 +82,10 @@ print(Robot.RobotInstance())  # 2
 
 # important
 """ instance method get self in first argument @staticmethod doesn't get any implicit first argument  and @classmethod 
-get cls in first argument """
+get cls in the first argument """
 
 """# the main different between staticmethod and @classmethod is in the class method 
-we can use method of its class or create a new instance but in the @static method it is impossible
+we can use the method of its class or create a new instance but in the @static method it is impossible
 """
 
 
@@ -140,7 +140,7 @@ class Fraction(object):
         g = cls.gcd(n1, n2)  # here we could access to  the class method by @classmethod
         return (n1 // g, n2 // g)
 
-    # we had used the str function to return the value of the object
+    # we have used the str function to return the value of the object
     def __str__(self):
         return str(self.numrator) + '/' + str(self.demnumrator)
 
@@ -150,7 +150,7 @@ print(x)  # 4/3
 print(x.numrator, x.demnumrator)  # 4 3
 
 
-# getter and setter in python
+# getter and setter in Python
 class P:
 
     def __init__(self, x):
