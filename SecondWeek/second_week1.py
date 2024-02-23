@@ -1,4 +1,4 @@
-# hey welcome to second week lesson
+# hey welcome to second week part 1 lesson
 # HAPPY  CODDING
 
 

@@ -1,4 +1,4 @@
-# second week 2 part
+# Second week 2 part
 
 # Exceptions...
 print("Try and Except")
