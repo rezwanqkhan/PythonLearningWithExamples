@@ -38,7 +38,7 @@ del y
 print("number of instance: " + str(C.counter))  # 0
 
 
-## for making private of an attribute
+# for making private of an attribute
 # For making private an attribute we have to use a double underscore(like __counter)
 # For making access to the private attribute we use instance methods
 class Robot:
@@ -212,4 +212,3 @@ print(p11.x)  # Output: 1000 (maximum value allowed)
 p11.x = 1001
 # Print the value of the property x again
 print(p11.x)  # Output: 1000 (maximum value allowed)
-

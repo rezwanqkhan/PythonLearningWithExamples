@@ -85,7 +85,7 @@ except(ValueError, ZeroDivisionError):  # merging the excepting
 else:
     print("everything is fine")
 
-print("raising the error ")
+print("Raising the error ")
 
 
 # faiz
