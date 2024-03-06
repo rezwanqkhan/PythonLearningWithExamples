@@ -46,7 +46,7 @@ try:
     c = a / b
     print("the answer of a divided by b: ", c)
 except ValueError:
-    print("Entered value wrong")  # if i enter a instead int
+    print("Entered value wrong")  # if I enter a instead int
 except ZeroDivisionError:
     print("Can't divide by zero ")
 
@@ -139,7 +139,7 @@ MyFunction('Hello', 'Welcome', 'to', 'python')  # Output:
 # to
 # python
 
-# Or dklfvmdflkv
+# Or in my opinion
 def MyFunction(arg1, *args):
     print("First argument is:", arg1)
     printed_next = False
@@ -325,3 +325,10 @@ def Divide(a, b):
 
 Divide(1, 0)  # can not divide by zero
 print(Divide(4, 3))
+
+dict = {
+    1: 2,
+    3: 4
+}
+for i, j in dict.items():
+    print(i, j, sep=":")

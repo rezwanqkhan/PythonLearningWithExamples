@@ -84,7 +84,7 @@ print(Robot.RobotInstance())  # 2
 """ instance method get self in first argument @staticmethod doesn't get any implicit first argument  and @classmethod 
 get cls in the first argument """
 
-"""# the main different between staticmethod and @classmethod is in the class method 
+"""# the main different between @staticmethod and @classmethod is in the class method 
 we can use the method of its class or create a new instance but in the @static method it is impossible
 """
 

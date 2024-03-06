@@ -1,5 +1,5 @@
 # first week
-#Happy to see you here, happy coding!
+# Happy to see you here, happy coding!
 
 
 # comments start with # in python
@@ -90,8 +90,8 @@ print(mylist[2:5])  # Range :   bring from two till 5( 5 is not included)
 print(mylist[:2])  # from zero until 2
 
 print((mylist[4:]))  # bring from 4 till last element of list
-
-print(mylist[-3:-1])  # bring from -3 until -1 which is the last element
+print("is -1 included?")
+print(mylist[-3:-1])  # bring from -3 until -1( -1 which is last item is not included )
 mylist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
 mylist[1] = "grap"  # second items which is banana changed to grap
 print(mylist)
@@ -119,7 +119,7 @@ print(mylist)
 del mylist[0]  # it is also delete the first item of array
 print(mylist)
 
-mylist.clear()  # delete all items of the array but mylist still available but empty
+mylist.clear()  # delete all items of the array but mylist still available & empty
 
 print("the elements of the list is cleared", mylist)
 
@@ -247,6 +247,11 @@ for x in mydict:
 print("using values method")
 for x in mydict.values():
     print(x)
+"""
+Ford
+2024
+red
+"""
 
 print("copy a dict")  # we can not use dict1 = dict2
 newdict = mydict.copy()
@@ -326,5 +331,3 @@ for x in range(5, 10):  # print from 5 till 9
 
 for x in range(1, 10, 3):  # start from 1 increment 3 by 3 until 9  output: 1 4 7
     print(x)
-
-

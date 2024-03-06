@@ -64,7 +64,7 @@ def myfunction():  # if the func is empty then add pass for avoid the error
 
 
 print("Lambda function")
-"""A lambda func is a small anonymous func, ot can take any number of argument 
+"""A lambda func is a small anonymous func, or can take any number of argument 
 bu it can only have one expression( This will raise a SyntaxError
 lambda x, y: x + y; x * y)
 
@@ -178,7 +178,7 @@ std1.printfullname()
 print("local scope")
 
 
-# a variable inside the function can be used only insife the function
+# a variable inside the function can be used only inside the function
 def myfunc():
     x = 300
     print(x)
