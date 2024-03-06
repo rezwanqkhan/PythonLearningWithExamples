@@ -44,12 +44,20 @@ Welcome to our repository dedicated to enhancing your Python programming skills 
     - Explore the usage of *args and **kwargs in Python functions with illustrative examples.
 
 12. **Decorators in Python:**
-    - Understand the concept of decorators and how to use them to modify the behavior of functions or methods.
+    - Understand the concept of decorators and how to use them to modify the behavior of functions or methods. Includes examples and explanations.
 
-13. **Function Passing as Arguments:**
-    - Learn how to pass functions as arguments to other functions for enhanced functionality.
+13. **Polymorphism in Python:**
+    - Learn how polymorphism enables different objects to respond to the same method call in different ways. Includes examples demonstrating polymorphic behavior.
+
+14. **Super Method in Python:**
+    - Understand the usage of the super() method to call methods of a superclass from within a subclass's method. Includes examples illustrating the super() method in action.
+
+15. **Abstract Base Classes (ABCs) in Python:**
+    - Explore abstract base classes (ABCs) as a way to define interfaces or contracts in Python. Learn how to use ABCs to enforce method implementations in subclasses. Includes examples demonstrating the usage of ABCs.
+
+16. **Object-Oriented Programming (OOP) Example:**
+    - Dive into an object-oriented programming example with code solution. Explore how to design and implement classes, inheritance, methods, and more in Python.
 
 Happy Coding! 🚀
 
-Rezwanullah khan
-
+Rezwanullah Khan
