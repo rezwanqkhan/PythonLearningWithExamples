@@ -87,8 +87,12 @@ class BankAccount:
     def deposit(self, balance):
         self.balance += balance
 
-    def withdraw(self, balance):
-        self.balance -= balance;
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient balance")
+        else:
+            self.balance -= amount
+            print(f"${amount} has been withdrawn from your account")
 
     def check_balance(self):
         return f"Customer Name: {self.customer_name}\nDate of Opening: {self.date_of_opening}\nAccount Number: {self.account_number}\nBalance: {self.balance}\n"
