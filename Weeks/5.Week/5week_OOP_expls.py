@@ -24,13 +24,16 @@ def addition(func):
 
     return innerfunction
 
+
 @addition
-@multiplication  #firstly execute
-def calculation(a):
-    print("inside the calculation function", a)
-    return a
+@multiplication  # firstly execute
+def calculation(x):
+    print("inside the calculation function", x)
+    return x
+
 
 calculation(3)
+
 
 # Example 5. Write a RationalNumber class with functions mul, add, sub, truediv that performs
 # arithmetics operations for rational numbers.
@@ -44,7 +47,6 @@ calculation(3)
 # 1/6
 # a/b
 # 3/2
-
 
 
 class RationalNumber:
@@ -81,6 +83,7 @@ class RationalNumber:
     def __str__(self):
         return f"{self.numerator}/{self.denominator}"
 
+
 # Example usage
 a = RationalNumber(1, 2)
 b = RationalNumber(1, 3)
@@ -106,6 +109,7 @@ def CollatzProblem(num):
     print(num)  # Print the final number (which is 1)
     return steps
 
+
 try:
     start_number = int(input("Enter a number greater than 1: "))
     if start_number <= 1:
@@ -114,9 +118,6 @@ try:
     print("Number of steps taken to reach 1 starting from", start_number, ":", steps_taken)
 except ValueError as ve:
     print("Invalid input:", ve)
-
-
-
 
 """
 Example 7. Caesar cipher
@@ -132,10 +133,12 @@ print ("Text : " + text)
 print ("Shift : " + str(key))
 print ("Cipher: " + encrypt(text,key))"""
 
+
 def encrypt(text, key):
     encrypted_text = ""
     for char in text:
         if char.isalpha():
+            # print(char)
             # Determine whether the character is uppercase or lowercase
             if char.isupper():
                 encrypted_char = chr((ord(char) - 65 + key) % 26 + 65)
@@ -146,10 +149,10 @@ def encrypt(text, key):
             encrypted_text += char  # Non-alphabetic characters remain unchanged
     return encrypted_text
 
+
 text = "KARATAY"
-key = 1    #LBSBUBZ
+key = 1  # LBSBUBZ
 
 print("Text : " + text)
 print("Shift : " + str(key))
 print("Cipher: " + encrypt(text, key))
-
