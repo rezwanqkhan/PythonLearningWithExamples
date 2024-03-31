@@ -15,7 +15,7 @@ A = 100
 print(type(A))
 
 
-# How to we can count the instance with class public attributes
+# How  we can count the instance with class public attributes
 class C:
     counter = 0
 

@@ -38,8 +38,10 @@ print("Shift : " + str(key))
 print("Cipher: " + encrypt(text, key))
 
 
-
-
+"""Example 8. Student scenario
+Create Student class. Attributes are firstname, lastname, skills.Create student_info, add_skill functions.
+student_info gives info of student and add_skill add the skill to student skills.
+"""
 
 class Student:
     def __init__(self, firstname, lastname):
@@ -62,7 +64,10 @@ print(A.studentinfo())
 
 
 print("\nSalary Example")
-
+"""Example 8. Employee scenario
+Create Employee class. Attributes are name, salary.Create show function that gives info of employee
+and salary salary will be private variable.
+"""
 
 class Employee:
 

@@ -170,7 +170,7 @@ def Myfunction(**kwargs):
 
 Myfunction(name='Ahmet', lastname='Akdag', year='2001')
 
-print("using the *args and **kwargs to pass the fuction")
+print("using the *args and **kwargs to pass the function")
 
 
 def myFucntion(arg1, arg2, arg3):
@@ -313,6 +313,7 @@ def new_divide(func):
         if b == 0:
             print("can not divide by zero")
             return
+        print("done")
         return func(a, b)
 
     return inner

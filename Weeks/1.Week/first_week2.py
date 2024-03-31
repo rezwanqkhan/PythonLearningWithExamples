@@ -209,8 +209,8 @@ def myfunc():
     print(x)
 
 
-myfunc()
-print(x)
+myfunc()  # 300
+print(x)   # 300
 
 print("Naming variables")
 """ if a variable inside and outside of function has different values

@@ -1,23 +1,22 @@
 
-
 """
 1. Write a Python class to convert an integer to a Roman numeral.
 """
 def int_to_roma(GivenNum):
-    intList =[1000,900,500,400,100,90,50, 40, 10,9, 5 ,4, 1 ]
-    Romasymb = ["M", "CM", "D", "CD", "C", "XC", "L","XL", "X", "IX",  "V", "IV", "I"]
+    intList = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    Romasymb = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
     roma_num = ''
 
-    i =0
+    i = 0
     while GivenNum > 0:
-         for x in range(GivenNum // intList[i]):
-             roma_num += Romasymb[i]
-             GivenNum -= intList[i]
-         i+=1
-    return  roma_num
+        for x in range(GivenNum // intList[i]):
+            roma_num += Romasymb[i]
+            GivenNum -= intList[i]
+        i += 1
+    return roma_num
+
 
 print(int_to_roma(100))
-
 
 """
 Example 2. Write a Python class Employee with attributes like emp_id, emp_name, emp_salary, and
@@ -32,6 +31,7 @@ Two person must be over 50 hours worked.
 Two person must change their departments
 """
 
+
 class Employee:
     def __init__(self, name, emp_id, salary, department):
         self.name = name
@@ -44,6 +44,7 @@ class Employee:
         if hours_worked > 50:
             overtime = hours_worked - 50
             self.salary = self.salary + (overtime * (self.salary / 50))
+
         else:
             self.salary = self.salary + (overtime * (self.salary / 50))
 
@@ -57,13 +58,13 @@ class Employee:
         print('Name: ', self.department)
 
 
-John = Employee('John', 1, department='security', salary=7500)
-John.calculate_salar(75)
+John = Employee('John', 1, 'security', 7500)
+# John.calculate_salar(75)
 John.assign_depm('software tester')
 John.print_emp_detil()
 print('\n')
-Rose = Employee('Rose', 1, department='Manager', salary=7500)
-Rose.calculate_salar(20)
+Rose = Employee('Rose', 1, 'Manager',7500)
+# Rose.calculate_salar(20)
 Rose.assign_depm('CEO')
 Rose.print_emp_detil()
 

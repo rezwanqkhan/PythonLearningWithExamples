@@ -35,13 +35,15 @@ def calculate_time(func):
 def fibonacci(num):
     n1, n2 = 0, 1
     counter = 0
+    next = 0
     print("Fibonacci Sequence: ")
     while counter < num:
-        print(n1, )
+        # print(next, )
         next = n1 + n2
         n1 = n2
         n2 = next
         counter += 1
+    print("Finished: ", next)
 
 
 print(fibonacci(10))
@@ -53,6 +55,7 @@ In simpler terms chaining decorators means decorating a function with multiple d
 
 def decor1(func):
     def inner():
+        print("inside decor1()")
         x = func()
         return x * x
 
@@ -62,6 +65,7 @@ def decor1(func):
 def decor2(func):
     def inner():
         x = func()
+        print("inside decor2()")
         return 2 * x
 
     return inner
@@ -70,6 +74,7 @@ def decor2(func):
 @decor1  # second
 @decor2  # first
 def num():
+    # print("inside num()")
     return 10
 
 
@@ -200,10 +205,14 @@ make_animal_speak(dog)  # Output: Woof!
 make_animal_speak(cat)  # Output: Meow!
 make_animal_speak(cow)  # Output: Moo!
 
+
 # from lecture
 class Shape:
     def area(self):
-        raise NotImplementedError("subclass most implement the 'area' method")
+        # you can write pass
+        pass
+        # raise NotImplementedError("subclass most implement the 'area' method")
+
 
 class Rectangle(Shape):
     def __init__(self, length, width):
@@ -218,24 +227,26 @@ class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
 
-
-
     def area(self):
-        return  3.14 * self.radius
+        return 3.14 * self.radius
 
-shapes = [Rectangle(5,4), Circle(3)]
+
+shapes = [Rectangle(5, 4), Circle(3)]
 
 for shap in shapes:
     print(shap.area())
 
 # for using abstract class we have to import from abc import ABC, abstractmethod
 from abc import ABC, abstractmethod
+
 print("\n abstract base class")
 """Abstract Base Classes (ABCs): ABCs provide a way to define interfaces or contracts in Python.
  They allow you to define a set of methods that must be implemented by concrete subclasses. 
  ABCs cannot be instantiated directly; 
  they serve as templates or blueprints for other classes to inherit from. 
 ABCs are used to enforce a contract or interface across multiple classes,"""
+
+
 # Define an abstract base class (ABC) called Shape
 class Shape(ABC):
     # Define an abstract method area() without implementation
@@ -247,6 +258,7 @@ class Shape(ABC):
     @abstractmethod
     def perimeter(self):
         pass
+
 
 # Define a concrete subclass Rectangle that inherits from Shape
 class Rectangle(Shape):
@@ -263,10 +275,10 @@ class Rectangle(Shape):
     def perimeter(self):
         return 2 * (self.width + self.height)
 
+
 # Create an instance of Rectangle with width 5 and height 4
 rect = Rectangle(5, 4)
 
 # Call the area() and perimeter() methods of Rectangle
-print("Area:", rect.area())          # Output: Area: 20
-print("Perimeter:", rect.perimeter()) # Output: Perimeter: 18
-
+print("Area:", rect.area())  # Output: Area: 20
+print("Perimeter:", rect.perimeter())  # Output: Perimeter: 18
