@@ -95,4 +95,5 @@ Component received message: Hello from Component 1
 Component received message: Hello from Component 1
 Component received message: Hi from Component 2
 Component received message: Hi from Component 2
+
 """
