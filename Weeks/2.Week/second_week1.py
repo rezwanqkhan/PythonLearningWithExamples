@@ -138,7 +138,7 @@ class Fraction(object):
     @classmethod
     def reduce(cls, n1, n2):  # cls is used for using the classmethode
         g = cls.gcd(n1, n2)  # here we could access to  the class method by @classmethod
-        return (n1 // g, n2 // g)
+        return n1 // g, n2 // g
 
     # we have used the str function to return the value of the object
     def __str__(self):

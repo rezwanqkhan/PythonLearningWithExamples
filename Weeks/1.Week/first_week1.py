@@ -1,5 +1,5 @@
 # first week
-# Happy to see you here, happy coding!
+# Happy to see you here, happy codding!
 
 
 # comments start with # in python

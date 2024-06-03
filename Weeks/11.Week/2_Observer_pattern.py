@@ -16,11 +16,11 @@ class Subject(ABC):
         self.__observers.remove(observer)
 
     def notify_observers(self):
-        i = 1
+        # i = 1
         for observer in self.__observers:
             observer.update()
-            print(i)
-            i += 1
+            # print(i)
+            # i += 1
 
 
 # step 2: the observer Interface

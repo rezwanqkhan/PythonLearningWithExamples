@@ -24,7 +24,6 @@ class KopanGateway:
 class PaymentFacade:
     def __init__(self):
         self._paypal = PayPalGateway()
-
         self._stripe = StripeGateway()
         self._crypto = CryptoGateway()
         self._kopen = KopanGateway()
